@@ -1,0 +1,350 @@
+﻿System.InvalidCastException: Заданное приведение является недопустимым.
+   в LibraryBusinessLogic.Repository.Scalar[TValue](String sp_name, List`1 parameters) в d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:строка 75
+   в EpicrizeGui.BusinessLogic.MatherBL.AddMather(Mather mather) в d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\MatherBL.cs:строка 64
+   в EpicrizeGui.MainForm.AddMather() в d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:строка 143
+   в EpicrizeGui.MainForm.BtnNewMatherClick(Object sender, EventArgs e) в d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:строка 248
+   в System.Windows.Forms.Control.OnClick(EventArgs e)
+   в System.Windows.Forms.Button.OnClick(EventArgs e)
+   в System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   в System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   в System.Windows.Forms.Control.WndProc(Message& m)
+   в System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   в System.Windows.Forms.Button.WndProc(Message& m)
+   в System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   в System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   в System.Windows.Forms.Application.Run(Form mainForm)
+   в EpicrizeGui.Program.Main(String[] args) в d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:строка 39
+   
+   
+   System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First
+   at EpicrizeGui.BusinessLogic.MatherBL.GetMather in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\MatherBL.cs:line 45
+   at EpicrizeGui.MainForm.BindMather in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 114
+   at EpicrizeGui.MainForm.LvMathersSelectedIndexChanged in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 272
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged
+   at System.Windows.Forms.ListView.WmReflectNotify
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.Control.SendMessage
+   at System.Windows.Forms.Control.ReflectMessageInternal
+   at System.Windows.Forms.Control.WmNotify
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.NativeWindow.DefWndProc
+   at System.Windows.Forms.Control.DefWndProc
+   at System.Windows.Forms.ListView.WmMouseDown
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+
+System.ArgumentOutOfRangeException: InvalidArgument=Значение '0' недопустимо для 'index'.
+   at SelectedListViewItemCollection.get_Item
+   at EpicrizeGui.MainForm.LvMathersSelectedIndexChanged in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 272
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged
+   at System.Windows.Forms.ListView.WmReflectNotify
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.Control.SendMessage
+   at System.Windows.Forms.Control.ReflectMessageInternal
+   at System.Windows.Forms.Control.WmNotify
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.NativeWindow.DefWndProc
+   at System.Windows.Forms.Control.DefWndProc
+   at System.Windows.Forms.ListView.WmMouseDown
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+System.Data.SqlClient.SqlException: Procedure or function 'AddChild' expects parameter '@FirstName', which was not supplied.
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar
+   at LibraryBusinessLogic.Repository.Scalar in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 75
+   at EpicrizeGui.BusinessLogic.ChildBL.AddChild in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\ChildBL.cs:line 66
+   at EpicrizeGui.MainForm.AddChild in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 207
+   at EpicrizeGui.MainForm.BtnNewChildClick in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 349
+   at System.Windows.Forms.Control.OnClick
+   at System.Windows.Forms.Button.OnClick
+   at System.Windows.Forms.Button.OnMouseUp
+   at System.Windows.Forms.Control.WmMouseUp
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ButtonBase.WndProc
+   at System.Windows.Forms.Button.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+System.Data.SqlClient.SqlException: Procedure or function 'AddChild' expects parameter '@FirstName', which was not supplied.
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar
+   at LibraryBusinessLogic.Repository.Scalar in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 75
+   at EpicrizeGui.BusinessLogic.ChildBL.AddChild in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\ChildBL.cs:line 66
+   at EpicrizeGui.MainForm.AddChild in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 207
+   at EpicrizeGui.MainForm.BtnNewChildClick in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 349
+   at System.Windows.Forms.Control.OnClick
+   at System.Windows.Forms.Button.OnClick
+   at System.Windows.Forms.Button.OnMouseUp
+   at System.Windows.Forms.Control.WmMouseUp
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ButtonBase.WndProc
+   at System.Windows.Forms.Button.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+System.Data.SqlClient.SqlException: Invalid column name 'FirtName'.
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.ExecuteReader
+   at System.Data.SqlClient.SqlCommand.ExecuteReader
+   at LibraryBusinessLogic.Repository.Select in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 38
+   at EpicrizeGui.BusinessLogic.MatherBL.GetMathers in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\MatherBL.cs:line 35
+   at EpicrizeGui.MainForm.BindMatherList in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 88
+   at EpicrizeGui.MainForm.MainFormLoad in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 242
+   at System.Windows.Forms.Form.OnLoad
+   at System.Windows.Forms.Form.OnCreateControl
+   at System.Windows.Forms.Control.CreateControl
+   at System.Windows.Forms.Control.CreateControl
+   at System.Windows.Forms.Control.WmShowWindow
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at System.Windows.Forms.ContainerControl.WndProc
+   at System.Windows.Forms.Form.WmShowWindow
+   at System.Windows.Forms.Form.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.Control.SetVisibleCore
+   at System.Windows.Forms.Form.SetVisibleCore
+   at System.Windows.Forms.Control.set_Visible
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+System.Data.SqlClient.SqlException: Invalid column name 'FirtName'.
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader
+   at System.Data.SqlClient.SqlCommand.ExecuteReader
+   at System.Data.SqlClient.SqlCommand.ExecuteReader
+   at LibraryBusinessLogic.Repository.Select in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 38
+   at EpicrizeGui.BusinessLogic.MatherBL.GetMather in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\MatherBL.cs:line 45
+   at EpicrizeGui.MainForm.BindMather in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 116
+   at EpicrizeGui.MainForm.LvMathersSelectedIndexChanged in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 291
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged
+   at System.Windows.Forms.ListView.WmReflectNotify
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.Control.SendMessage
+   at System.Windows.Forms.Control.ReflectMessageInternal
+   at System.Windows.Forms.Control.WmNotify
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.NativeWindow.DefWndProc
+   at System.Windows.Forms.Control.DefWndProc
+   at System.Windows.Forms.ListView.WmMouseDown
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+System.IndexOutOfRangeException: MatherId
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal
+   at LibraryBusinessLogic.Repository.ReadEntity in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 110
+   at LibraryBusinessLogic.Repository.Select in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 42
+   at EpicrizeGui.BusinessLogic.ChildBL.GetChildrens in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\ChildBL.cs:line 36
+   at EpicrizeGui.MainForm.BindChilds in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 107
+   at EpicrizeGui.MainForm.LvMatherChildrenSelectedIndexChanged in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 306
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged
+   at System.Windows.Forms.ListView.WmReflectNotify
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.Control.SendMessage
+   at System.Windows.Forms.Control.ReflectMessageInternal
+   at System.Windows.Forms.Control.WmNotify
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.NativeWindow.DefWndProc
+   at System.Windows.Forms.Control.DefWndProc
+   at System.Windows.Forms.ListView.WmMouseDown
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+System.ArgumentException: Невозможно преобразовать объект типа "System.Double" к типу "System.Single".
+   at System.RuntimeType.CheckValue
+   at System.Reflection.MethodBase.CheckArguments
+   at System.Reflection.RuntimeMethodInfo.Invoke
+   at System.Reflection.RuntimeMethodInfo.Invoke
+   at System.Reflection.RuntimePropertyInfo.SetValue
+   at System.Reflection.RuntimePropertyInfo.SetValue
+   at LibraryBusinessLogic.Repository.ReadEntity in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 144
+   at LibraryBusinessLogic.Repository.Select in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 42
+   at EpicrizeGui.BusinessLogic.ChildBL.GetChildrens in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\ChildBL.cs:line 36
+   at EpicrizeGui.MainForm.BindChilds in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 107
+   at EpicrizeGui.MainForm.LvMatherChildrenSelectedIndexChanged in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 306
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged
+   at System.Windows.Forms.ListView.WmReflectNotify
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.Control.SendMessage
+   at System.Windows.Forms.Control.ReflectMessageInternal
+   at System.Windows.Forms.Control.WmNotify
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.NativeWindow.DefWndProc
+   at System.Windows.Forms.Control.DefWndProc
+   at System.Windows.Forms.ListView.WmMouseDown
+   at System.Windows.Forms.ListView.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+
+System.ArgumentNullException: Значение не может быть неопределенным.
+   at System.IO.Path.Combine
+   at EpicrizeGui.GenerateForm.BtnGenerateClick in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\GenerateForm.cs:line 96
+   at System.Windows.Forms.Control.OnClick
+   at System.Windows.Forms.Button.OnClick
+   at System.Windows.Forms.Button.OnMouseUp
+   at System.Windows.Forms.Control.WmMouseUp
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ButtonBase.WndProc
+   at System.Windows.Forms.Button.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.RunDialog
+   at System.Windows.Forms.Form.ShowDialog
+   at System.Windows.Forms.Form.ShowDialog
+   at EpicrizeGui.MainForm.ToolStripButton1Click in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 58
+   at System.Windows.Forms.ToolStripItem.RaiseEvent
+   at System.Windows.Forms.ToolStripButton.OnClick
+   at System.Windows.Forms.ToolStripItem.HandleClick
+   at System.Windows.Forms.ToolStripItem.HandleMouseUp
+   at System.Windows.Forms.ToolStripItem.FireEventInteractive
+   at System.Windows.Forms.ToolStripItem.FireEvent
+   at System.Windows.Forms.ToolStrip.OnMouseUp
+   at System.Windows.Forms.Control.WmMouseUp
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at System.Windows.Forms.ToolStrip.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+System.IndexOutOfRangeException: IdentifierN1
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal
+   at LibraryBusinessLogic.Repository.ReadEntity in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 110
+   at LibraryBusinessLogic.Repository.Select in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Core\Repository.cs:line 42
+   at EpicrizeGui.BusinessLogic.DepartmentBL.GetDepartment in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\BusinessLogic\DepartmentBL.cs:line 32
+   at EpicrizeGui.MainForm.BindDepartment in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 69
+   at EpicrizeGui.MainForm.MainFormLoad in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\MainForm.cs:line 245
+   at System.Windows.Forms.Form.OnLoad
+   at System.Windows.Forms.Form.OnCreateControl
+   at System.Windows.Forms.Control.CreateControl
+   at System.Windows.Forms.Control.CreateControl
+   at System.Windows.Forms.Control.WmShowWindow
+   at System.Windows.Forms.Control.WndProc
+   at System.Windows.Forms.ScrollableControl.WndProc
+   at System.Windows.Forms.ContainerControl.WndProc
+   at System.Windows.Forms.Form.WmShowWindow
+   at System.Windows.Forms.Form.WndProc
+   at ControlNativeWindow.OnMessage
+   at ControlNativeWindow.WndProc
+   at System.Windows.Forms.NativeWindow.DebuggableCallback
+   at System.Windows.Forms.Control.SetVisibleCore
+   at System.Windows.Forms.Form.SetVisibleCore
+   at System.Windows.Forms.Control.set_Visible
+   at ThreadContext.RunMessageLoopInner
+   at ThreadContext.RunMessageLoop
+   at System.Windows.Forms.Application.Run
+   at EpicrizeGui.Program.Main in d:\Eugene\zhevtoshtanigor\EpicrizeGui\EpicrizeGui\Program.cs:line 39
+
+[Department.IdentifierN1]
+[Department.IdentifierN2]
